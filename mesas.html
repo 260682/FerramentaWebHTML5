@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Loja de Móveis</title>
+    <link rel="stylesheet" href="_css/mesa.css" />
+
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+
+    <script>
+    function calc_total() {
+        var qtd = parseInt (document.getElementById('cQtd').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value = tot;
+    }
+    </script>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>ESCTEC Brasil Móveis S.A.</h1>
+                <h2>Venha Conhecer</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/mesa-01.jpg" />
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmousemove="mudaFoto('_imagens/home.png')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="index.html">Home</li></a>
+                    <li onmousemove="mudaFoto('_imagens/logo.jpg')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="empresa.html">A Empresa</li></a>
+                    <li onmousemove="mudaFoto('_imagens/produto.jpg')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="produtos.html">Produtos</li></a>
+                    <li onmousemove="mudaFoto('_imagens/icone-contato.png')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="contatos.html">Contatos</li></a>
+                    <li onmousemove="mudaFoto('_imagens/mesa-01.jpg')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="mesas.html">Mesas</li></a>
+                    <li onmousemove="mudaFoto('_imagens/cadeira.jpg')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="cadeiras.html">Cadeiras</li></a>
+                    <li onmousemove="mudaFoto('_imagens/produto.jpg')"onmouseout="mudaFoto('_imagens/mesa-01.jpg')"><a href="Diversos.html">Diversos</li></a>
+                </ul>
+            </nav>
+        </header>
+
+            <section id="corpo-full">
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgrup>
+                            <h3>Mesas > Fotos</h3>
+                            <h1>Galeria de Imagens de Mesas</h1>
+                            <h2>por Fábio Ferreira</h2>
+                            <h3>Atualizado em 013/Maio/2017</h3>
+                        </hgrup>
+                    </header>
+
+                    <form method="post" id="fContato" action="mailto:fabiofreitas82@yahoo.com.br" oninput="calc_total();">
+                        <p>
+                            Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características da Estec Brasil Móveis,
+                            como novos designer que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma
+                            versão ampliada e com uma breve descrição.
+                        </p>
+
+                        <ul id="album-fotos">
+                            <li id="foto01"><span>Mesa para Telefone</span></li>
+                            <li id="foto02"><span> Mesa de Centro Mogno</span></li>
+                            <li id="foto03"><span>Mesa de Centro Importada</span></li>
+                            <li id="foto04"><span>Mesa de Jantar em Vidro e quatro lugares</span></li>
+                            <li id="foto05"><span>Mesa de Sucupira com 10 lugares</span></li>
+                            <li id="foto06"><span>Mesa Central para sala de estar</span></li>
+                        </ul>
+                        <fieldset id="pedido">
+                            <legend>Quero Adquirir uma Mesa</legend>
+                            <p>
+                                <input type="checkbox" name="tPed" id="cPed" checked />
+                                <label for="cPed">Gostaria de Adquirir Mesas quando Disponível</label>
+                            </p>
+                            <p>
+                                <label for="cCor">Cor:</label>
+                                <input type="color" name="tCor" id="cCor" value="#0000ff" />
+                            </p>
+                            <p>
+                                <label for="cQtd">Quantidade:</label>
+                                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" />
+                            </p>
+                            <p>
+                                <label for="cTot">Preço Total: R$</label>
+                                <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly />
+                            </p> <! readoly=impede que de digitar dentro do campo >
+                        </fieldset>
+
+                        <input type="submit" value="Enviar" />
+
+                        <a href="contatos.html">Faça seu Cadastro Aqui</a>
+                  </form>
+               </article>
+            </section>          
+
+            <footer id="rodape">
+                <p>Site criado em 12/05/2017 - Fábio de Freitas Ferreira - RA: 1299146537<br />
+                <p> Contatos: (31) 3456-8000 / (31) 98956-1523.<br />
+                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </footer>
+</div>
+</body>
+</html>

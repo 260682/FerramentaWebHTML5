@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Loja de Móveis</title>
+    <link rel="stylesheet" href="_css/diversos.css" />
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt (document.getElementById('cQtd').value);
+        tot = qtd * 0;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>ESCTEC Brasil Móveis S.A.</h1>
+                <h2>Venha Conhecer</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/produto.jpg" />
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmousemove="mudaFoto('_imagens/home.png')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="index.html">Home</li></a>
+                    <li onmousemove="mudaFoto('_imagens/logo.jpg')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="empresa.html">empresa</li></a>
+                    <li onmousemove="mudaFoto('_imagens/produto.jpg')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="produtos.html">Produtos</li></a>
+                    <li onmousemove="mudaFoto('_imagens/icone-contato.png')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="contatos.html">Contatos</li></a>
+                    <li onmousemove="mudaFoto('_imagens/mesa.jpg')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="mesas.html">Mesas</li></a>
+                    <li onmousemove="mudaFoto('_imagens/cadeira.jpg')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="cadeiras.html">Cadeiras</li></a>
+                    <li onmousemove="mudaFoto('_imagens/produto.jpg')"onmouseout="mudaFoto('_imagens/produto.jpg')"><a href="Diversos.html">Diversos</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgrup>
+                        <h3>Móveis Diversos > Fotos</h3>
+                        <h1>Galeria de Imagens de Móveis</h1>
+                        <h2>por Fábio Ferreira</h2>
+                        <h3>Atualizado em 013/Maio/2017</h3>
+                    </hgrup>
+                </header>
+                <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características da Estec Brasil Móveis,
+                    como novos designer que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma
+                    versão ampliada e com uma breve descrição.</p>
+
+                <ul id="album-fotos">
+                    <li id="foto01"><span>Conjunto para Sala de Jantar</span></li>
+                    <li id="foto02"><span>Conjunto para Sala de Reuniões</span></li>
+                    <li id="foto03"><span>Conjunto para Sala de Intreterimento</span></li>
+                    <li id="foto04"><span>Quarto Planejado</span></li>
+                    <li id="foto05"><span>Cozinha Planejada</span></li>
+                    <li id="foto06"><span>Estante para TV</span></li>
+                </ul>
+                <form method="post" id="fContato" action="mailto:fabiofreitas82@yahoo.com.br" oninput="calc_total();"></form>
+                    
+
+                <a href="contatos.html">Adiquira seu Orçamento Aqui</a>
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Site criado em 12/05/2017 - Fábio de Freitas Ferreira - RA: 1299146537<br />
+            <p> Contatos: (31) 3456-8000 / (31) 98956-1523.<br />
+            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </footer>
+    </div>
+</body>
+</html>

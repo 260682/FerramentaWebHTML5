@@ -1,0 +1,84 @@
+﻿@charset "UTF-8";
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regurar.otf");
+}
+div#interface {
+	width: 1150px;
+	background-color: #ffffff;
+	margin: 10px auto 10px auto;
+	box-shadow: 10px 0px 10px rgba(0,0,0,.5);
+	padding: 85px;	
+}
+header#cabecalho img#icone {
+	position: absolute;
+	left: 1100px;
+	top: 50px;	
+}
+header#cabecalho {
+	border-bottom: 2px #606060 solid;
+	height: 160px;
+	background: url("_imagens/home.png") no-repeat 10px 100px;
+}
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-top: -80px;
+}
+header#cabecalho h2 {
+	font-family: Arial, sans-serif;
+	color: #888888;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-top: 10px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+p {
+	text-align: justify-all;
+	text-indent: 50px;
+}
+nav#menu {
+	display: block; /*faz menu flutuar*/
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase; /* deixa em maiuscula*/
+	position: absolute;
+	top: -5px;
+	left: 600px;
+}
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd; /* sbreado no botão menu*/
+	padding: 10px; /* tamanho dos botonhes*/
+	margin: 2px; /* distancia entre um botão e outro*/
+    transition: background-color 2s;   
+}
+nav#menu li:hover{
+    transition-duration: 2s;
+}
+nav#menu h1 {
+	display: none; /*esconde a palavra menu principal */
+}
+footer#rodape {
+	clear: both; /*limpa a configuração dos dois lado e faz com que o rodape apareça fora da divisão*/
+	border-top: 2px solid #606060; /* cria uma alinha acima do rodape */
+}
+footer#rodape {
+	text-align: center; /* centraliza o rodape */
+}
+
+
+
+
+
+
+

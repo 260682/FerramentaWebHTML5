@@ -1,0 +1,173 @@
+﻿@charset "UTF-8";
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regurar.otf");
+}
+div#interface {
+	width: 1150px;
+	background-color: #ffffff;
+	margin: 10px auto 10px auto;
+	box-shadow: 10px 0px 10px rgba(0,0,0,.5);
+	padding: 85px;	
+}
+header#cabecalho img#icone {
+	position: absolute;
+	left: 1100px;
+	top: 50px;	
+}
+header#cabecalho {
+	border-bottom: 2px #606060 solid;
+	height: 160px;
+	background: url("_imagens//mesa-01.jpg") no-repeat 10px 100px;
+}
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-top: -80px;
+}
+header#cabecalho h2 {
+	font-family: Arial, sans-serif;
+	color: #888888;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-top: 10px;
+}
+nav#menu {
+	display: block; /*faz menu flutuar*/
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+p {
+	text-align: justify-all;
+	text-indent: 50px;
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase; /* deixa em maiuscula*/
+	position:fixed;
+	top: -5px;
+	left: 600px;
+
+}
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd; /* sbreado no botão menu*/
+	padding: 10px; /* tamanho dos botonhes*/
+	margin: 2px; /* distancia entre um botão e outro*/
+    transition: background-color 1s;
+
+}
+nav#menu li:hover{
+    transition-duration: 1s;
+}
+nav#menu h1 {
+	display: none; /*esconde a palavra menu principal */
+}
+ul#album-fotos {
+	width: 1000px;
+	margin: 0px;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+ul#album-fotos li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid with;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);	
+	-webkit-transition: all 1s ease-in;
+}
+ul#album-fotos li span { /*configuração da legenda das fotos */
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+}
+ul#album-fotos li: hover {
+	-webkit-transform: scale(1.5);
+}
+ul#album-fotos li:hover span {
+	opacity: 1;
+	
+}
+ul#album-fotos li#foto01 {
+	background: url('../_imagens/mesa-01.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto01:hover { /* efeito de zoom, afastando a imagem */
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto02 {
+	background: url('../_imagens/mesa-02.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto03 {
+	background: url('../_imagens/mesa-03.jpg.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto04 {
+	background: url('../_imagens/mesa-04.jpg.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto05 {
+	background: url('../_imagens/mesa-05.jpg.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto06 {
+	background: url('../_imagens/mesa-06.jpg.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+
+footer#rodape {
+	cleat: both;
+	border-top: 2px solid #606060;
+}
+footer#rodape {
+	text-align: center;
+}
